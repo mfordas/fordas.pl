@@ -1,0 +1,14 @@
+$main-color: #ffd000;
+
+.menu {
+    display: flex;
+    background-color: $main-color;
+    justify-content: center;
+
+    .menuItem {
+        color: #000;
+        border-bottom: 2px solid #000;
+        padding: 0.2rem;
+        margin: 0.2rem;
+    }
+}
