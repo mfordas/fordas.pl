@@ -1,14 +1,19 @@
-$main-color: #ffd000;
+$main-color:  #3d403d;
 
 footer {
     display: flex;
     background-color: $main-color;
     justify-content: center;
     align-items: center;
+    align-content: center;
 
     .footerItem {
-        color: #000;
+        color:#ebe7d5;
         padding: 0.2rem;
         margin: 0.2rem;
+    }
+
+    a {
+        color: plum;
     }
 }

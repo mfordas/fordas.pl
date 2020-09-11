@@ -8,13 +8,7 @@ const Menu = () => (
       className="menu"
     >
         <Link
-          to="/components/mainPage"
-          className="menuItem"
-        >
-          main
-        </Link>
-        <Link
-          to="/mainPage"
+          to="/aboutMe"
           className="menuItem"
         >
           o mnie

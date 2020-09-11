@@ -2,21 +2,23 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import Menu from './menu'
 import "./header.scss"
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <header className="header">
     <div
       className="main"
     >
-      <h1>
+      <div className="logo">
         <Link
           to="/"
           className="link"
         >
           {siteTitle}
         </Link>
-      </h1>
+      </div>
+      <Menu />
     </div>
   </header>
 )

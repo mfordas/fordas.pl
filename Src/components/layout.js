@@ -9,9 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import Menu from './menu'
-import Footer from './footer'
+import Header from "./Header/header"
+import Footer from './Footer/footer'
 import "./layout.scss"
 
 
@@ -29,16 +28,15 @@ const Layout = ({ children }) => {
   
   return (
     <div style={{ 
-      height: '100vh',
+      minheight: '100vh',
+      maxWidth: '100vw',
       display: "flex",
-      flexDirection: 'column'}}>
+      flexDirection: 'column',
+      overflow: 'hidden'}}>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Menu />
       <div
         style={{
-          margin: `0 auto`,
-          width: 1024,
-          padding: `0 1.0875rem 0`,
+          width: '100vw',
           display: "flex",
           flexGrow: 1,
         }}

@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+$main-color: #f4f5ed;
+$font-color:  #52514f;
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -10,7 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -24,7 +29,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 main,
 menu,
@@ -54,6 +58,7 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
+  color: $font-color;
 }
 a:active,
 a:hover {
@@ -91,7 +96,7 @@ h1 {
 }
 mark {
   background-color: #ff0;
-  color: #000;
+  color: $font-color;
 }
 small {
   font-size: 80%;

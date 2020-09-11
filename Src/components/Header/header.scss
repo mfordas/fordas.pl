@@ -1,0 +1,29 @@
+$main-color: #f4f5ed;
+$font-color:  #52514f;
+
+.header {
+
+    .main {
+      margin: 0 auto;
+      max-Width: 960px;
+      padding: 1.45rem 1.0875rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      .logo {
+        text-align: center;
+        font-size: 2rem;
+      }
+    };
+  
+    .link {
+      color: $font-color;
+      text-decoration: none;
+    }
+
+};
+
+
+
+ 

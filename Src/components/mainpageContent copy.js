@@ -4,11 +4,11 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Menu from './menu'
-import Footer from './footer'
+import Footer from './Footer/footer'
 import "./mainPage.scss"
 
 
-const MainPage = ({ children }) => {
+const MainPageContent = ({ children }) => {
 //   const data = useStaticQuery(graphql`
 //     query SiteTitleQuery {
 //       site {
@@ -32,8 +32,8 @@ const MainPage = ({ children }) => {
   )
 }
 
-MainPage.propTypes = {
+MainPageContent.propTypes = {
   children: PropTypes.node,
 }
 
-export default MainPage
+export default MainPageContent
