@@ -3,7 +3,10 @@ import React from "react"
 
 import "./menu.scss"
 
-const Menu = () => (
+
+
+const Menu = () => {
+return(
     <div
       className="menu"
     >
@@ -26,13 +29,14 @@ const Menu = () => (
           książki
         </Link>
         <Link
-          to="/"
+          to="/contact"
           className="menuItem"
         >
           kontakt
         </Link>
     </div>
 )
+}
 
 
 

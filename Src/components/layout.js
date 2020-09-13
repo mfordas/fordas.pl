@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
   
   return (
     <div style={{ 
-      minheight: '100vh',
+      minHeight: '100vh',
       maxWidth: '100vw',
       display: "flex",
       flexDirection: 'column',

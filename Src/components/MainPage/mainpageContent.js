@@ -1,7 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Image from "../UniversalComponents/image"
+import MainPageImage1 from "./mainPageImage1"
+import MainPageImage2 from "./mainPageImage2"
 import "./mainPage.scss"
 
 
@@ -10,13 +11,15 @@ const MainPageContent = () => {
     <div className="mainPageContainer" >
         <div className="contentArea">
         <div className="text">Cześć. <br/> Jestem konstruktorem elementów z tworzyw sztucznych i programistą JavaScript.</div>
-        <div className="image"><Image/></div>
+        <div className="image"><MainPageImage1/></div>
         </div>
         <div className="contentArea">
-        To jest głowna kolumna
+        <div className="image"><MainPageImage2/></div>
+        <div className="text">Cześć. <br/> Jestem konstruktorem elementów z tworzyw sztucznych i programistą JavaScript.</div>
         </div>
         <div className="contentArea">
-        To jest głowna kolumna
+        <div className="text">Cześć. <br/> Jestem konstruktorem elementów z tworzyw sztucznych i programistą JavaScript.</div>
+        <div className="image"><MainPageImage2/></div>
         </div>
     </div>
   )
