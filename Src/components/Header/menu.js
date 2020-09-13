@@ -17,7 +17,7 @@ return(
           o mnie
         </Link>
         <Link
-          to="/"
+          to="/blog"
           className="menuItem"
         >
           blog

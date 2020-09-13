@@ -1,4 +1,4 @@
-$(document).ready(function() {
+export default formHandler = () => $(document).ready(function() {
     $("#contact .button").click(function() {
     let firstname = $('#firstname').val();
     let subject = $('#subject').val();
