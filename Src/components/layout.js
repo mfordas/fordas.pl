@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
           flexGrow: 1,
         }}
       >
-        <main style={{ width: '100%'}}>{children}</main>
+        <main style={{ width: '100%', display: 'flex', justifyContent: 'center'}}>{children}</main>
       </div>
         <Footer />
     </div>

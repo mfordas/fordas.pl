@@ -2,20 +2,21 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 
 import Layout from '../layout'
+import Image from '../UniversalComponents/image'
+import './blogPostTemplate.scss'
 
 const BlogPostTemplate = ({ data }) => {
     const post = data.markdownRemark
 
     return (
         <Layout>
-        <div>
-            <hr />
-            <h1>{post.frontmatter.title}</h1>
-            <h4>Posted by {post.frontmatter.author} on {post.frontmatter.date}</h4>
+        <div className="blogPostContainer">
+            <h2>{post.frontmatter.title}</h2>
+            <h4>Dodane przez {post.frontmatter.author}</h4>
+            <h6>{post.frontmatter.date}</h6>
+            <Image alt="Main post image" filename={post.frontmatter.pic} />
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
             <Link to="/blog">Powrót</Link>
-            <hr />
-            <br />
         </div>
         </Layout>
     )
@@ -30,6 +31,7 @@ export const postQuery = graphql`
                 title
                 author
                 date
+                pic
             }
         }
     }

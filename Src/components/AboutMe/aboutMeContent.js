@@ -1,7 +1,7 @@
 import React from 'react';
 
 import "./aboutMe.scss"
-import Photo from './photo'
+import Image from '../UniversalComponents/image'
 
 
 const AboutMeContent = () => (
@@ -16,7 +16,7 @@ const AboutMeContent = () => (
                 i wziąłem z nim udział. Od tamtego czasu, czyli od października 2019 po pracy zajmuję się programowaniem w JavaScript.
                 </div>
                 <div>Interesuję się również zarządzaniem projektami. Szczególnie metodykami zwinnymi. Posiadam certyfikat PSM I.</div>
-                <div className="image"><Photo/></div>
+                <div className="image"><Image alt="mfordas photo" filename="photo.png" /></div>
                 </div>
         </div>
 );

@@ -1,24 +1,23 @@
 import React from "react"
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import BlogPostMiniature from '../components/BlogPost/blogPostMiniature'
+
+import '../components/BlogPost/blog.scss'
 
 const BlogPage = ({data}) => (
   <Layout>
     <SEO title="Blog" />
+    <div className="blogContainer">
     <h1>Posts</h1>
+    <div className="blogPostsContainer">
     {data.allMarkdownRemark.edges.map(post => 
-    <div key={post.node.id}>
-        <h3>{post.node.frontmatter.title}</h3>
-        <div>{post.node.excerpt}</div>
-        <small>Posted by { post.node.frontmatter.author}</small>
-        <br />
-        <br />
-        <Link to={post.node.frontmatter.path}>Read more</Link>
-        <hr />
-        <br />
-    </div>)}
+    <BlogPostMiniature key={post.node.id} post={post} />
+    )}
+    </div>
+    </div>
   </Layout>
 )
 
@@ -34,6 +33,7 @@ export const data = graphql
                 date
                 author
                 title
+                pic
               }
               excerpt
             }

@@ -1,0 +1,14 @@
+.blogPostContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 100%;
+
+    .gatsby-image-wrapper {
+        width: 75%;
+        align-self: center;
+        margin: 1rem;
+    }
+    
+
+}
