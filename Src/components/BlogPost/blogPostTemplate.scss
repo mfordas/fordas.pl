@@ -3,12 +3,41 @@
     flex-direction: column;
     width: 80%;
     min-height: 100%;
+    line-height: 1.6em;
 
     .gatsby-image-wrapper {
-        width: 75%;
+        width: 50%;
         align-self: center;
         margin: 1rem;
     }
+
+    .blogPicturesContainer {
+        display: flex;
+        width: 100%;
+
+        .gatsby-resp-image-wrapper {
+            width: 49%;
+        }
+    }
     
 
+}
+
+@media screen and (max-width: 1024px) {
+ .blogPostContainer {
+
+    .gatsby-image-wrapper {
+        width: 100%;
+    }
+
+    .blogPicturesContainer {
+        flex-direction: column;
+
+        .gatsby-resp-image-wrapper {
+            width: 80%;
+            margin: 1rem;
+        }
+    }
+ }   
+    
 }

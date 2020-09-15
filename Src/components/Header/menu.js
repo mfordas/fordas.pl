@@ -9,6 +9,12 @@ return(
       className="menu"
     >
         <Link
+          to="/"
+          className="menuItem"
+        >
+        główna
+        </Link>
+        <Link
           to="/aboutMe"
           className="menuItem"
         >
@@ -19,12 +25,6 @@ return(
           className="menuItem"
         >
           blog
-        </Link>
-        <Link
-          to="/"
-          className="menuItem"
-        >
-          książki
         </Link>
         <Link
           to="/contact"
