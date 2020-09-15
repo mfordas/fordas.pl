@@ -15,7 +15,6 @@ const dateInMilisecondsCreation = (date) => {
 }
 
 const sortPosts = (postsArray) => {
-  console.log(postsArray);
   const sortedArray = postsArray.sort((a, b) => dateInMilisecondsCreation(b.node.frontmatter.date)-dateInMilisecondsCreation(a.node.frontmatter.date));
   return sortedArray
 }
@@ -24,7 +23,6 @@ const BlogPage = ({data}) => (
   <Layout>
     <SEO title="Blog" />
     <div className="blogContainer">
-    <h1>Posts</h1>
     <div className="blogPostsContainer">
     {sortPosts(data.allMarkdownRemark.edges).map(post => {
     return <BlogPostMiniature key={post.node.id} post={post} />

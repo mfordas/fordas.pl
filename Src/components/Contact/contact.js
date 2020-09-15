@@ -64,7 +64,7 @@ if(firstNameVal==true && subjectVal== true && messageVal== true && emailVal== tr
 
     $.ajax({
     type: 'post',
-    url: '../../Contact/contact.php',
+    url: './contact.php',
     data: varData,
     success: function(){
                    $('.success').fadeIn(1000);
