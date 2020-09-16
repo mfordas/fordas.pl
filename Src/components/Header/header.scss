@@ -14,15 +14,39 @@ $font-color:  #52514f;
       .logo {
         text-align: center;
         font-size: 2rem;
+
+        
       }
     };
   
     .link {
       color: $font-color;
       text-decoration: none;
+
+      &[aria-current="page"] {
+        border-bottom: 2px solid #000;
+      }
     }
 
 };
+
+@media screen and (max-width: 320px) {
+
+  .header {
+
+    .main {
+  
+      .logo {
+        text-align: center;
+        font-size: 1.2em;
+      }
+    };
+  
+
+  }
+
+}
+
 
 
 

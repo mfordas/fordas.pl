@@ -8,12 +8,12 @@ return(
     <div
       className="menu"
     >
-        <Link
+        {/* <Link
           to="/"
           className="menuItem"
         >
         główna
-        </Link>
+        </Link> */}
         <Link
           to="/aboutMe"
           className="menuItem"
@@ -26,12 +26,12 @@ return(
         >
           blog
         </Link>
-        {/* <Link
+        <Link
           to="/contact"
           className="menuItem"
         >
           kontakt
-        </Link> */}
+        </Link>
         <a href={'https://fordas.pl/Portfolio/index'} target='_blank' className="menuItem" style={{backgroundColor:'#ffd000'}}>
           portfolio
         </a>
