@@ -2,10 +2,10 @@
 htmlspecialchars($_SERVER["PHP_SELF"]);
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-    /*$name = test_input($_POST['name']);
+    $name = test_input($_POST['name']);
     $email = test_input($_POST['email']);
     $message = test_input($_POST['message']);
-    $subject = test_input($_POST['subject']);*/
+    $subject = test_input($_POST['subject']);
 
     function test_input($data) {
           $data = trim($data);

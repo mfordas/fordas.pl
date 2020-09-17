@@ -7,7 +7,7 @@ import ContactFormContent from "../components/Contact/contactFormContent"
 
 const ContactFormPage = () => (
   <Layout>
-    <SEO title="O mnie" />
+    <SEO title="Kontakt" />
     <ContactFormContent />
   </Layout>
 )

@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 
 import Layout from '../layout'
+import SEO from '../seo';
 import Image from '../UniversalComponents/image'
 import './blogPostTemplate.scss'
 
@@ -10,6 +11,7 @@ const BlogPostTemplate = ({ data }) => {
 
     return (
         <Layout>
+            <SEO title={post.frontmatter.title} description={post.frontmatter.short} />
         <div className="blogPostContainer">
             <h2>{post.frontmatter.title}</h2>
             <h4>Dodane przez {post.frontmatter.author}</h4>
