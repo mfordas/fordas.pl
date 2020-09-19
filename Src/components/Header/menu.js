@@ -5,9 +5,16 @@ import "./menu.scss"
 
 const Menu = () => {
 return(
+  <div className="menu-wrap">
+    <input type="checkbox" className="toggler"/>
+  <div className="hamburger">
+    <div></div>
+    </div>
     <div
       className="menu"
     >
+      <div>
+      <div>
         {/* <Link
           to="/"
           className="menuItem"
@@ -35,6 +42,9 @@ return(
         <a href={'https://fordas.pl/Portfolio/index'} target='_blank' className="menuItem" style={{backgroundColor:'#ffd000'}}>
           portfolio
         </a>
+      </div>
+      </div>
+    </div>
     </div>
 )
 }
