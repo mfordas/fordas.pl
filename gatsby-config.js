@@ -3,6 +3,8 @@ module.exports = {
     title: `mfordas`,
     description: `Mateusz Fordas. Strona na temat konstrukcji części z tworzyw sztucznych w przemyśle Automotive i programowania w JavaScript.`,
     author: `Mateusz Fordas`,
+    keywords: ['javascript', 'programowanie', 'html', 'css', 'scss', 'react', 'react-native', 'agile', 'scrum', 'catia', 'nx', 'coding'],
+    siteUrl: 'https://www.fordas.pl'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

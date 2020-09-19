@@ -11,7 +11,7 @@ const BlogPostTemplate = ({ data }) => {
 
     return (
         <Layout>
-            <SEO title={post.frontmatter.title} description={post.frontmatter.short} />
+            <SEO title={post.frontmatter.title} description={post.frontmatter.short} image={post.frontmatter.pic}/>
         <div className="blogPostContainer">
             <h2>{post.frontmatter.title}</h2>
             <h4>Dodane przez {post.frontmatter.author}</h4>

@@ -16,7 +16,7 @@ pic: "group-of-lacrosse-players-celebrating-with-coach-during-159728.jpg"
                                     zadowolony, że dałem radę, skończyłem kurs z wyróżnieniem i otrzymałem certyfikat.
                                 </p>
                                 <div class="blogPicturesContainer">
-                                    <img src="https://fordas.pl/CodersCampCert/CodersCampCert.jpg"
+                                    <img src="../../../images/coding/cc_cert.png" alt="Coders camp certificate"
                                         ></div>
                                 <p>Cały kurs był dla mnie niemałym wyzwaniem ponieważ przed nim miałem raczej mało
                                     doczynienia z programowaniem - w sumie tylko te trzy małe programy napisane w Javie,
