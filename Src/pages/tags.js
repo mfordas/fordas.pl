@@ -5,6 +5,11 @@ import kebabCase from "lodash/kebabCase"
 // Components
 import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
+
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import '../components/Tags/tags.scss'
+
 const TagsPage = ({
   data: {
     allMarkdownRemark: { group },
@@ -13,21 +18,21 @@ const TagsPage = ({
     },
   },
 }) => (
-  <div>
-    <Helmet title={title} />
-    <div>
-      <h1>Tags</h1>
-      <ul>
+  <Layout>
+  <SEO title={title} />
+    <div className="tagsListContainer">
+      <h1>Wszystkie tagi</h1>
+      <div >
         {group.map(tag => (
-          <li key={tag.fieldValue}>
-            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-              {tag.fieldValue} ({tag.totalCount})
+            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`} key={tag.fieldValue}>
+          <p className="tagItemContainer" >
+              #{tag.fieldValue} ({tag.totalCount})
+          </p>
             </Link>
-          </li>
         ))}
-      </ul>
+      </div>
     </div>
-  </div>
+  </Layout>
 )
 TagsPage.propTypes = {
   data: PropTypes.shape({

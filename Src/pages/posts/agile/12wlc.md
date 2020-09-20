@@ -3,7 +3,7 @@ path: "/12WLC"
 date: "2019-10-14"
 title: "12. Wrocław Lean Coffee - Agendy Kanbanu - Jakie problemy rozwiązuje Kanban?"
 author: "mfordas"
-tags: ["kanban"]
+tags: ["kanban", "management", "agile"]
 short: "Ostatnio pierwszy raz wziąłem
                                         udział w spotkaniu Wrocław Lean Coffee.
                                         Był to również pierwszy mój meetup w formule Lean Coffee."

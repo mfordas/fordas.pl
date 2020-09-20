@@ -3,13 +3,13 @@ path: "/coderscamp"
 date: "2019-10-24"
 title: "CodersCamp - otwarty kurs programowania webowego"
 author: "mfordas"
-tags: ["coding"]
+tags: ["coding", "webdev"]
 short: "Zaczynam przygodę z programowaniem webowym."
 pic: "CC.png"
 ---
 
-  <div class="w3-container">
-                            <div class="w3-left w3-justify">
+  <div>
+                            <div>
                                 <p>We wtorek 22.10.2019 odebrałem bardzo dobrą wiadomość -
                                     dostałem się na otwarty kurs programowania webowego <a
                                         href="https://coderscamp.edu.pl/" target="_blank"><b>CodersCamp</b></a>. </p>

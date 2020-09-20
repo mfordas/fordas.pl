@@ -3,7 +3,7 @@ path: "/T4Tfeedback"
 date: "2019-11-28"
 title: "Tools4Teams : #5 Konstruktywny feedback"
 author: "mfordas"
-tags: ["management"]
+tags: ["management", "t4t"]
 short: "To już piąty meetup z serii
                                         Tools4Teams, tym razem tematem był feedback."
 pic: "feedback.jpg"

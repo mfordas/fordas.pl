@@ -3,7 +3,7 @@ path: "/UXBurner"
 date: "2019-12-05"
 title: "Agile on Site #5 - VSF Experts - UX Burner"
 author: "mfordas"
-tags: ["agile"]
+tags: ["agile", "scrum"]
 short: "Miałem okazję wziąć udział w
                                         pierwszym w Polsce warsztacie z frameworka UX Burner ogranizowanym przez jego
                                         twórcę."

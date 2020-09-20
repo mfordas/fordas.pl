@@ -6,6 +6,7 @@ import { Link, graphql } from "gatsby"
 import BlogPostsGridTemplate from '../BlogPost/blogPostsGridTemplate'
 import Layout from "../layout"
 import SEO from "../seo"
+import "./tags.scss"
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
@@ -16,10 +17,10 @@ const Tags = ({ pageContext, data }) => {
   return (
     <Layout>
     <SEO title={`#${tag}`} />
-    <div>
-      <h1>{tagHeader}</h1>
+    <div className="tagContainer">
+      <h2>#{tag}</h2>
       <BlogPostsGridTemplate data={data} />
-      <Link to="/tags">All tags</Link>
+      <Link to="/tags"><h3>Wszystkie tagi</h3></Link>
     </div>
     </Layout>
   )
@@ -40,7 +41,7 @@ Tags.propTypes = {
               date: PropTypes.string.isRequired,
               author: PropTypes.string.isRequired,
               pic: PropTypes.string.isRequired,
-              tags: PropTypes.string.isRequired,
+              tags: PropTypes.array.isRequired,
             }),
           }),
         }).isRequired

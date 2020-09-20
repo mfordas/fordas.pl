@@ -3,7 +3,7 @@ path: "/coderscampres"
 date: "2020-01-14"
 title: "CodersCamp - podsumowanie"
 author: "mfordas"
-tags: ["coding", "webdev"]
+tags: ["coding", "webdev", "javascript"]
 short: "Trzy miesiące bardzo intensywnej
                                         nauki za mną, czas na podsumowanie kursu."
 pic: "group-of-lacrosse-players-celebrating-with-coach-during-159728.jpg"

@@ -3,7 +3,7 @@ path: "/T4TDelegowanie"
 date: "2020-01-13"
 title: "Tools4Teams : #6 Wielopoziomowe delegowanie"
 author: "mfordas"
-tags: ["management"]
+tags: ["management", "t4t"]
 short: "Szósty z kolei meetup Tool4Teams poruszał temat delegowania zadań."
 pic: "Del_1.jpg"
 ---

@@ -3,7 +3,7 @@ path: "/vanillajs"
 date: "2020-02-18"
 title: "VanillaJS - aplikacje bez bibliotek i frameworków"
 author: "mfordas"
-tags: ["coding"]
+tags: ["coding", "javascript"]
 short: "Po zakończeniu CodersCamp przyszedł czas na rozwój i doskonalenie umiejętności zdobytych na kursie.
                                         Zacząłem od powtórki HTML, CSS i czystego JavaScript."
 pic: "vanilla_js_all.png"
