@@ -3,7 +3,7 @@ path: "/liberatingstructures"
 date: "2019-10-01"
 title: "Liberating Structures"
 author: "mfordas"
-hashtag: "liberatingstructures"
+tags: ["liberatingstructures"]
 short: "Spotkania przedłużają wam się w nieskończoność? A może po prostu wieje nudą? Z pomocą przychodzą Liberating Structures..."
 pic: "brain-2062057_1280.jpg"
 ---

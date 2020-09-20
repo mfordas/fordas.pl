@@ -3,7 +3,7 @@ path: "/liberatingstructures2"
 date: "2019-11-28"
 title: "Liberating Structures Wrocław"
 author: "mfordas"
-hashtag: "liberatingstructures"
+tags: ["liberatingstructures"]
 short: "Był już jeden wpis na temat Liberating Structures ale temat jest na tyle ciekawy,
         że zdecydowałem się napisać o nich jeszcze raz dla tych, którzy o nich nie słyszeli."
 pic: "attention-2019460_1920.jpg"

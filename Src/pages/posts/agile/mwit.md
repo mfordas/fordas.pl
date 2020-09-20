@@ -3,7 +3,7 @@ path: "/mwit"
 date: "2019-10-24"
 title: "Warsztaty - Motywacja w realiach IT"
 author: "mfordas"
-hashtag: "management"
+tags: ["management"]
 short: "Myślę, że każdy z nas
                                         przynajmniej
                                         raz spotkał się ze spadkiem motywacji.

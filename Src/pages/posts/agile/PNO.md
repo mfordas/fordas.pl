@@ -3,7 +3,7 @@ path: "/PNO"
 date: "2019-10-01"
 title: "Produkt nad Odrą - #2Kwartał z Kanbanem"
 author: "mfordas"
-hashtag: "kanban"
+tags: ["kanban"]
 short: "Produkt nad Odrą to
                                         rozszerzenie
                                         odbywającego się w Warszawie Produktu na Wisłą... "

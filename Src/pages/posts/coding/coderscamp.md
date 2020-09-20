@@ -3,7 +3,7 @@ path: "/coderscamp"
 date: "2019-10-24"
 title: "CodersCamp - otwarty kurs programowania webowego"
 author: "mfordas"
-hashtag: "coding"
+tags: ["coding"]
 short: "Zaczynam przygodę z programowaniem webowym."
 pic: "CC.png"
 ---
