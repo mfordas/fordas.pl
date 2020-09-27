@@ -12,7 +12,7 @@ const BlogPostTemplate = ({ data }) => {
 
     return (
         <Layout>
-            <SEO title={post.frontmatter.title} description={post.frontmatter.short} image={post.frontmatter.pic}/>
+            <SEO title={post.frontmatter.title} description={post.frontmatter.short} image={{src: post.frontmatter.pic, width: 800, height: 800}}/>
         <div className="blogPostContainer">
             <h2>{post.frontmatter.title}</h2>
             <h4>Dodane przez {post.frontmatter.author}</h4>
@@ -38,6 +38,7 @@ export const postQuery = graphql`
                 date
                 pic
                 tags
+                short
             }
         }
     }

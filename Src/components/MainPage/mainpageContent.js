@@ -9,7 +9,7 @@ const MainPageContent = () => {
     <div className="mainPageContainer" >
         <div className="contentArea">
         <div className="text">Cześć. <br/> Nazywam się Mateusz Fordas. Jestem konstruktorem elementów z tworzyw sztucznych i programistą JavaScript.</div>
-        <div className="image"><Image alt="mfordas photo" filename="pexels-pixabay-273238.jpg" /></div>
+        <div className="image"><Image alt="mfordas photo" filename="pexels-pixabay-257897.jpg" /></div>
         </div>
         <div className="contentArea">
         <div className="image"><Image alt="shaking hand photo" filename="hand-819279_1920.jpg"/></div>
