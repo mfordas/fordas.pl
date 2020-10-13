@@ -71,18 +71,18 @@ const ContactFormContent = () => {
       }
      
       const sendEmail = async () => {
-        const messageData = JSON.stringify({
+        const messageData = {
             name: name,
             subject: thema,
             email: email,
             message: message
-        });
+        };
 
         await axios({
             method: 'post',
             url: './contact.php',
             data: messageData,
-        }).then(() => {
+        }).then((res) => {
           setName('');
           setThema('');
           setEmail('');
@@ -92,7 +92,7 @@ const ContactFormContent = () => {
           setEmailValid(false);
           setThemaValid(false);
           setRobot(false);
-          console.log('done')}
+        }
           ).catch(error => console.log(error));
 
       }

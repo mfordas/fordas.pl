@@ -2,48 +2,47 @@
 htmlspecialchars($_SERVER["PHP_SELF"]);
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-    $name = test_input($_POST['name']);
-    $email = test_input($_POST['email']);
-    $message = test_input($_POST['message']);
-    $subject = test_input($_POST['subject']);
+    $data = json_decode(file_get_contents("php://input"), true);
 
-    function test_input($data) {
-          $data = trim($data);
-          $data = stripslashes($data);
-          $data = htmlspecialchars($data);
-          return $data;
+    echo $data;
+
+    function test_input($data2) {
+          $data2 = trim($data2);
+          $data2 = stripslashes($data2);
+          $data2 = htmlspecialchars($data2);
+          return $data2;
         }
 
-    if (empty($_POST['name'])) {
+    if (empty($data['name'])) {
         $nameErr = "Name is required";
       } else {
-        $name = test_input($_POST['name']);
+        $name = $data['name'];
         // check if name only contains letters and whitespace
         if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
           $nameErr = "Only letters and white space allowed";
         }
       }
 
-      if (empty($_POST['email'])) {
+      if (empty($data['email'])) {
         $emailErr = "Email is required";
       } else {
-        $email = test_input($_POST['email']);
+        $email = $data['email'];
         // check if e-mail address is well-formed
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
           $emailErr = "Invalid email format";
         }
       }
 
-      if (empty($_POST['message'])) {
+      if (empty($data['message'])) {
         $subject = "";
       } else {
-        $message = test_input($_POST['message']);
+        $message = $data['message'];
       }
 
-      if (empty($_POST['subject'])) {
+      if (empty($data['subject'])) {
               $subject = "";
             } else {
-              $subject = test_input($_POST['subject']);
+              $subject = $data['subject'];
             }
 
     $formcontent="$name \r\n $message \r\n";
@@ -52,6 +51,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $headers .= 'From: ' . $name . "\r\n";
     $headers .= 'E-mail: ' . $email . "\r\n";
     $headers .= 'Wiadmość: ' . $message . "\r\n";
+
     mail($recipient, $subject, $headers);
     }
 ?>
