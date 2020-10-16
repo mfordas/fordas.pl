@@ -23,6 +23,7 @@ const ContactFormContent = () => {
         themaValidate();
         messageValidate();
         notARobotValidate();
+        setFormValid(true);
         if (!nameValid || !emailValid || !themaValid || !messageValid || !robot) {
             setFormValid(false);
         } else if (nameValid && emailValid && themaValid && messageValid && robot) { 
@@ -32,8 +33,6 @@ const ContactFormContent = () => {
           console.log('error');
         }
       }
-
-
     
       const nameValidate = () => {
         if (name.length < 3) {
@@ -69,7 +68,22 @@ const ContactFormContent = () => {
         }
         else { setRobot(true); return null }
       }
-     
+
+      const actionsAfterSuccesfullySendedMessage = () => {
+        document.getElementById('confirmationMessage').innerHTML = '<p>Wiadomość wysłana! Dziękuję bardzo. Skontaktuję się z Tobą najszybciej jak będę mógł.</p>';
+        document.getElementById('agree').checked = false;
+        setName('');
+        setThema('');
+        setEmail('');
+        setMessage('');
+        setMessageValid(false);
+        setNameValid(false);
+        setEmailValid(false);
+        setThemaValid(false);
+        setRobot(false);
+        setTimeout(() => document.getElementById('confirmationMessage').innerHTML='', 5000);
+      }
+
       const sendEmail = async () => {
         const messageData = {
             name: name,
@@ -83,18 +97,11 @@ const ContactFormContent = () => {
             url: './contact.php',
             data: messageData,
         }).then((res) => {
-          setName('');
-          setThema('');
-          setEmail('');
-          setMessage('');
-          setMessageValid(false);
-          setNameValid(false);
-          setEmailValid(false);
-          setThemaValid(false);
-          setRobot(false);
+          if (res.status === 200) {
+          actionsAfterSuccesfullySendedMessage();
         }
+      }
           ).catch(error => console.log(error));
-
       }
 
 return (
@@ -121,18 +128,17 @@ return (
                                     {!formValid && !messageValid ? messageValidate() : null}
                                 </label>
                                 <div className="dataProcessingAgreementContainer">
-                                  <input type="checkbox" id="agree" style={{margin:'0.5em'}}onClick={() => setRobot(!robot)} />
+                                  <input type="checkbox" id="agree" style={{margin:'0.5em'}} onClick={() => setRobot(!robot)} />
                                   <label htmlFor="agree">Nie jestem robotem</label> 
                                 </div>
                                     {!formValid && !robot? notARobotValidate() : null}
                                 <div>
                                     <button onClick={e => {onButtonSubmit(e)}}>Wyślij</button>
                                 </div>
+                                <div id="confirmationMessage"></div>
                             </form>
                         </div>
-
 )
-
 }
 
 export default ContactFormContent

@@ -39,7 +39,7 @@ return(
         >
           kontakt
         </Link>
-        <a href={'https://fordas.pl/Portfolio/index'} target='_blank' className="menuItem" style={{backgroundColor:'#ffd000'}}>
+        <a href={'https://fordas.pl/Portfolio/index'} target='_blank' rel="noreferrer" className="menuItem" style={{backgroundColor:'#ffd000'}}>
           portfolio
         </a>
       </div>

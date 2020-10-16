@@ -4,7 +4,6 @@ import kebabCase from "lodash/kebabCase"
 
 import Image from '../UniversalComponents/image'
 import './blogPostMiniature.scss'
-import { indexOf } from 'lodash'
 
 const BlogPostMiniature = ( { post } ) => (
     <div key={post.node.id} className="blogPostMiniatureContainer">

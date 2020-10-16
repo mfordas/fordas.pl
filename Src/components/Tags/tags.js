@@ -11,14 +11,13 @@ import "./tags.scss"
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
   const { totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} wpis${
-    totalCount === 1 ? "" : "y"
-  } pod tagiem "#${tag}"`
+  const tagHeader = `Liczba postów pod tagiem "#${tag}" : ${totalCount}`
   return (
     <Layout>
     <SEO title={`#${tag}`} />
     <div className="tagContainer">
       <h2>#{tag}</h2>
+      <h6>{tagHeader}</h6>
       <BlogPostsGridTemplate data={data} />
       <Link to="/tags"><h3>Wszystkie tagi</h3></Link>
     </div>
