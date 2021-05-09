@@ -8,12 +8,12 @@ import SEO from "../components/seo"
 const BlogPage = ({data}) => (
   <Layout>
     <SEO title="Blog" />
- <BlogPostsGridTemplate data={data} />
+    <BlogPostsGridTemplate data={data} />
  </Layout>
 )
 
 export const data = graphql
-    `query BlogIndexQuery {
+    `query blogIndex {
         allMarkdownRemark {
           edges {
             node {
@@ -32,7 +32,5 @@ export const data = graphql
           }
         }
 }`
-
-
 
 export default BlogPage
