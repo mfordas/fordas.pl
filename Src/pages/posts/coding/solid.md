@@ -10,7 +10,6 @@ pic: "pexels-pixabay-257617.jpg"
 
 
 <div>
-  <div>
                             <p>Gdy zaczynałem naukę programowania usłyszałem od kolegi programisty, że trzeba napisać bardzo dużo złego kodu żeby się czegoś nauczyć. Staram się więc w miarę możliwości napisać co najmniej kilka linijek kodu. Jednak jakiś czas temu kupiłem książkę "Czysty kod" R.C. Martina a następnie "Zwinne wytwarzanie oprogramowania" tego samego autora i oprócz kodowania, czytam i staram się wdrażać pisanie <b>dobrego i czystego kodu</b>. Cykl "Dobre praktyki" zacznę od SOLID.</p>
                                 <p>
                             <p>Co to tak właściwie jest ten <b>SOLID</b> o którym wszyscy mówią? Jest to skrót od angielskich nazw pięciu zasad projektowania obiektowego:</p>
@@ -27,7 +26,7 @@ pic: "pexels-pixabay-257617.jpg"
                                 <p><b>Powód modyfikacji klasy powinien być tylko jeden.</b>[1]</p>
                                 <p>Przykładowo mamy klasę Shape przedstawioną poniżej:
                                 </p>
-                                </div>
+</div>
 
 ```javascript
    class Shape {
@@ -44,6 +43,7 @@ pic: "pexels-pixabay-257617.jpg"
         };
 };
 ```
+
 <div>
 <p>
 Posiada ona dwie metody:
@@ -74,7 +74,6 @@ class DrawRectangle {
 };
 ```
 <div>
-
 <h3>2. Zasada otwarte - zamknięte (Open-Closed Principle - OCP)</h3>
                                 <p><b>Kod który piszemy (klasy, moduły, funkcje) powinien być otwarty na rozbudowę ale zamknięty na modyfikacje.</b>[1]</p>
                                 <p>Ogólnie mówiąc chodzi o to, że jeśli mamy moduł wykonujący pewne zadanie a wraz z rozwojem aplikacji zmienią się wymagania klienta to możemy bez zmieniania kodu tego modułu (zamknięty na modyfikacje) dodać do niego zachowanie (otwarty na rozszerzenia), które sprosta nowym wymaganiom klienta. 
@@ -104,7 +103,6 @@ class DrawRectangle {
                                         <li>Klasy implementujące interfejs nie będą zmuszone do implementacji metod, których nie potrzebują</li>
                                         <li>Jeśli jakaś klasa kliencka będzie wymagała od interfejsu zmiany to wpłynie to na mniejszą część pozostałych klas klienckich (albo w ogóle nie wpłynie na inne klasy klienckie jeżeli żadna z nich nie implementuje tego interfejsu).</li>
                                     </ol>
-                                </p>
                                 <p>Więcej oczywiście <a
                                         href="https://drive.google.com/file/d/0BwhCYaYDn8EgOTViYjJhYzMtMzYxMC00MzFjLWJjMzYtOGJiMDc5N2JkYmJi/view"
                                         target="_blank"><b>tutaj</b></a>.
@@ -113,10 +111,10 @@ class DrawRectangle {
                                 <p><b>Moduły wysokopoziomowe nie powinny zależeć od modułów niskopoziomowych. I jedne, i drugie powinny zależeć od abstrakcji.</b>[1]</p>
                                 <p><b>Abstrakcje nie powinny zależeć od szczegółów. To szczegóły powinny zależeć od abstrakcji.[1]</b></p>
                                 <p>Najlepiej wytłumaczyć to na przykładzie. Wyobraźmy sobie, że mamy dwa obiekty, które przekazują między sobą dane. Obiekt Przycisk, który pobiera informacje z zewnątrz (od użytkownika) sprawdza w jakim znajduje się stanie a następnie przekazuje do obiektu Tokarka komunikat Włącz lub Wyłącz. Tokarka następnie wysyła informację do fizycznego urządzenia jakim jest tokarka. Poniżej znajduje się diagram takiego rozwiązania.</p>
-                                <img src="../../../images/coding/solid_uml_1.png" style="width:150px" alt="uml_1">
+                                <img src="../../../images/coding/solid_uml_1.png" style="width:150px" alt="uml_1"/>
                                 <p>Problemem jest to, że klasa Przycisk bezpośrednio zależy od klasy Tokarka. Nie ma między nimi żadnej warstwy abstrakcji. Wysokopoziomowa strategia zależy od modułów niskopoziomowych a abstrakcje zależą od szczegołów.</p>
                                 <p>Aby odwrócić zależność możemy posłużyć się interfejsem.</p>
-                                <img src="../../../images/coding/solid_uml_2.png" style="width:150px" alt="uml_2">
+                                <img src="../../../images/coding/solid_uml_2.png" style="width:150px" alt="uml_2"/>
                                 <p>Na drugim diagramie widać, że pomiędzy Przyciskiem a Tokarką umieściliśmy interfejs UrządzenieKtoreMoznaWlaczycIWylaczyc. Interfejs ten dostarcza abstrakcyjne metody Wlacz i Wylacz, których może użyć klasa Przycisk. Klasa Tokarka implementuje interfejs UrządzenieKtoreMoznaWlaczycIWylaczyc. Nie ma znaczenia co służy do włączania i wyłączania a także co jest włączane i wyłączane. Najważniejsze żeby obiekt, którym sterujemy wiedział jak używać interfejsu UrządzenieKtoreMoznaWlaczycIWylaczyc a obiekt sterowany implementował jego metody</p>
                                 <p>Oczywiście <a
                                         href="https://drive.google.com/file/d/0BwhCYaYDn8EgOTViYjJhYzMtMzYxMC00MzFjLWJjMzYtOGJiMDc5N2JkYmJi/view"
@@ -135,5 +133,4 @@ class DrawRectangle {
                                         target="_blank"><b>PrinciplesOfOOD - R.C. Martin (Uncle Bob)</b></a></li>
                                     </ul>
                                 </p>
-                        </div>
-                        </div>
+                            </div>

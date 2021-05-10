@@ -35,7 +35,7 @@ pic: "Del_1.jpg"
                                 delegowanie. Wynik możecie zobaczyć na zdjeciu poniżej.
                             </p>
                             <div class="blogPicturesContainer">
-                                <img src="../../../images/agile/Del_1.jpg" alt="Zdjecie"></div>
+                                <img src="../../../images/agile/Del_1.jpg" alt="Zdjecie"/></div>
                             <p >
                                 <p> Następnie w parach mieliśmy za zadanie wymyślić plusy i minusy poszczególnych
                                     poziomów delegacji. Korzystaliśmy ze skali znanej z Managment'u 3.0:</p>
@@ -62,14 +62,14 @@ pic: "Del_1.jpg"
                                 Na poniższych zdjęciach możecie zobaczyć do jakich wniosków doszliśmy.
                             </p>
                             <div class="blogPicturesContainer">
-                                <img src="../../../images/agile/Del_2.jpg" alt="Zdjecie">
-                                <img src="../../../images/agile/Del_3.jpg" alt="Zdjecie"></div>
+                                <img src="../../../images/agile/Del_2.jpg" alt="Zdjecie"/>
+                                <img src="../../../images/agile/Del_3.jpg" alt="Zdjecie"/></div>
                             <p >
                                 Kolejnym etapem było przeanalizowanie konkretnych zadań i ocenienie jaki poziom
                                 delegacji byśmy w ich przypadku zastosowali.
                             </p>
                             <div class="blogPicturesContainer">
-                                <img src="../../../images/agile/Del_4.jpg" alt="Zdjecie"></div>
+                                <img src="../../../images/agile/Del_4.jpg" alt="Zdjecie"/></div>
                             <p >
                                 W niektórych przypadkach odpowiedzi znacznie różniły się od siebie, ponieważ różnie
                                 podeszliśmy do zadań. Przykładowo przy "Ocenie pracy" rozstrzał był dość duży ale

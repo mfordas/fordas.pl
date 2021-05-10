@@ -8,7 +8,7 @@ short: "Czyli #moimisłowami o tym po co nam testy, rodzajach testów, framework
 pic: "pexels-catherine-sheila-4554744.jpg"
 ---
 
-  <div>
+<div>
                            <p>Zacznę od tego, że nie będę tutaj zgrywał jakiegoś autorytetu w zagadnieniach poruszanych w serii #moimisłowami ponieważ ciągle jestem na etapie nauki programowania. Teksty, które będę tutaj umieszczał mają na celu odpowiedzenie w zwięzły sposób na kilka pytań związanych z tematem i skompletowanie źródeł, z których można dowiedzieć się więcej.
                                 </p>
                                 <p>
@@ -46,7 +46,7 @@ pic: "pexels-catherine-sheila-4554744.jpg"
                                 <p>Piramida testów określa jaką ilość danego rodzaju testów powinniśmy pisać. Jak łatwo się domyślić najwięcej powinno być testów jednostkowych ponieważ są one najszybsze a co za tym idzie najtańsze. Następne w kolejności są testy integracyjne i e2e. Oczywiście piramida testów jest tylko ogólnym założeniem i w zależności od rodzaju aplikacji proporcje ilości testów mogą się różnić.
                                 </p>
                                 <div class="blogPicturesContainer">
-                                    <img src="../../../images/coding/piramida_testow.png"></div>
+                                    <img src="../../../images/coding/piramida_testow.png"/></div>
                                <h3>4. Frameworki do testowania w JS</h3>
                                 <p>Dzięki frameworkom do testowania dostajemy gotowy zestaw funkcji, z których możemy skorzystać a także program, który uruchamia wszystkie napisane przez nas testy i sprawdza, które się powiodły, a które nie i wyświetla nam raport. 
                                 </p>

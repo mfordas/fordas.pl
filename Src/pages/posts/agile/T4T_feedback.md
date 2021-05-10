@@ -39,7 +39,7 @@ pic: "feedback.jpg"
                                 </ul>
                             </p>
                             <div class="blogPicturesContainer">
-                                <img src="../../../images/agile/IMG_20191113_195007.jpg" alt="Zdjecie"></div>
+                                <img src="../../../images/agile/IMG_20191113_195007.jpg" alt="Zdjecie"/></div>
                             <p>
                                 Następnie był czas na dyskusję i uzupełnienie odpowiedzi grupowych przez innych
                                 uczestników, dzięki czemu powstał całkiem niezły zestaw odpowiedzi będący dobrym
@@ -58,7 +58,7 @@ pic: "feedback.jpg"
                                 </ul>
                             </p>
                             <div>
-                                <img src="../../../images/agile/IMG_20191113_184724.jpg" alt="Zdjecie"></div>
+                                <img src="../../../images/agile/IMG_20191113_184724.jpg" alt="Zdjecie"/></div>
                             <p>
                                 Ze spotkania udało mi się wynieść bardzo dużo potrzebnej wiedzy, którą mogę zastosować
                                 nie tylko w pracy ale także w życiu prywatnym. Jeśli będziecie mieli czas to polecam wam

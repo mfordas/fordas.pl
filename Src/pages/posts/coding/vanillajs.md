@@ -9,7 +9,7 @@ short: "Po zakończeniu CodersCamp przyszedł czas na rozwój i doskonalenie umi
 pic: "vanilla_js_all.png"
 ---
 
- <div>
+<div>
                                 <p>Zaliczam się do osób, które uważają, że trzymiesięczny kurs programowania to tak na
                                     prawdę tylko początek nauki, więc od razu po zakończeniu zabrałem się za powtórzenie
                                     i rozszerzenie wiadomości z kursu. Na pierwszy ogień poszły <b>HTML</b>, <b>CSS</b> i czysty
@@ -24,7 +24,7 @@ pic: "vanilla_js_all.png"
                                         target="_blank"><b>KLIK</b></a>.</p>
                                 <div class="blogPicturesContainer">
                                     <img src="../../../images/coding/animals_sounds.png" style="width:150px"
-                                        ></div>
+                                        /></div>
                                 <p> Druga aplikacja to gra Candy defense. Myślę, że każdy z nas widział jak wygląda
                                     upuszczony na ziemię cukierek chwilę po tym gdy tylko dowiedzą się o nim mrówki -
                                     stąd wziął się pomysł na grę. Bronimy w niej naszego upuszczonego cukierka przed
@@ -33,9 +33,9 @@ pic: "vanilla_js_all.png"
                                         target="_blank"><b>KLIK</b></a>.</p>
                                 <div class="blogPicturesContainer">
                                     <img src="../../../images/coding/candy_defense_2.png" class="w3-hover-opacity" style="width:49%"
-                                        >
+                                        />
                                     <img src="../../../images/coding/candy_defense.png" class="w3-hover-opacity" style="width:49%"
-                                        >
+                                        />
                                 </div>
                                 <p> Trzecia aplikacja to Wthr. Minimalistyczna aplikacja pogodowa pozwalająca sprawdzić
                                     temperaturę, siłę wiatru, ciśnienie i wilgotność, wykorzystująca zewnętrzne API.
@@ -43,7 +43,7 @@ pic: "vanilla_js_all.png"
                                         target="_blank"><b>KLIK</b></a>.
                                 </p>
                                 <div class="blogPicturesContainer">
-                                    <img src="../../../images/coding/wthr.png">
+                                    <img src="../../../images/coding/wthr.png"/>
                                     </div>
                                 <p>Byłoby mi niezmiernie miło przeczytać Wasze opinie na temat aplikacji - te dobre i
                                     złe. Jeśli macie jakieś pomysły na dodatkowe rzeczy, które mogłyby znaleźć się w

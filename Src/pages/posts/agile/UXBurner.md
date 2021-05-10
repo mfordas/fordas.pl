@@ -5,8 +5,8 @@ title: "Agile on Site #5 - VSF Experts - UX Burner"
 author: "mfordas"
 tags: ["agile", "scrum"]
 short: "Miałem okazję wziąć udział w
-                                        pierwszym w Polsce warsztacie z frameworka UX Burner ogranizowanym przez jego
-                                        twórcę."
+        pierwszym w Polsce warsztacie z frameworka UX Burner ogranizowanym przez jego
+        twórcę."
 pic: "ux-burner.jpg"
 ---
 
@@ -34,7 +34,7 @@ pic: "ux-burner.jpg"
                                 wniosków doszliśmy.
                             </p>
                             <div class="blogPicturesContainer">
-                                    <img src="../../../images/agile/ux-burner-2.jpg" alt="Zdjecie"></div>
+                                    <img src="../../../images/agile/ux-burner-2.jpg" alt="Zdjecie"/></div>
                             <p >
                                 Narzędzie wydaje się przydatne i warte zastosowania. W zależności od projektu /
                                 organizacji / okoliczności pewnie będą potrzebne jakieś modyfikacje ale moim zdaniem

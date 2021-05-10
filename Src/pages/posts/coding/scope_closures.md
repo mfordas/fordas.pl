@@ -19,7 +19,7 @@ pic: "pexels-cottonbro-4966171.jpg"
                                     </ol>
                                 </p>
                                 <p>Przeważnie mamy do czynienia z więcej niż jednym zakresem. Tak samo jak funkcje i bloki zakresy mogą być zagnieżdżane wewnątrz innych zakresów. Jeśli zmienna nie zostanie znaleziona w bieżącym zakresie silnik JavaScriptu przejdzie do wyższego zakresu w celu jej znalezienia. Jeśli znowu jej nie znajdzie to przejdzie do zakresu wyżej, do momentu aż dojdzie do globalnego zakresu.</p>
-                                <p>Z wyszukiwaniem zmiennych w zakresach związane są wyrzucane błędy:
+                                <p>Z wyszukiwaniem zmiennych w zakresach związane są wyrzucane błędy:</p>
                                  <ol>
                                         <li><b>Reference Error - </b>występuje gdy podczas wyszukiwania RHS zmienna nie zostanie znaleziona w zakresie lub podczas wyszukiwania LHS gdy aktywny jest strict mode.</li>
                                         <li><b>Type Error - </b>dostaniemy gdy podczas wyszukiwania RHS zmienna zostanie znaleziona ale operacja, którą chcemy na niej wykonać jest niedozwolona.</li>

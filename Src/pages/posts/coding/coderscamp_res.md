@@ -17,13 +17,13 @@ pic: "group-of-lacrosse-players-celebrating-with-coach-during-159728.jpg"
                                 </p>
                                 <div class="blogPicturesContainer">
                                     <img src="../../../images/coding/cc_cert.png" alt="Coders camp certificate"
-                                        ></div>
+                                        /></div>
                                 <p>Cały kurs był dla mnie niemałym wyzwaniem ponieważ przed nim miałem raczej mało
                                     doczynienia z programowaniem - w sumie tylko te trzy małe programy napisane w Javie,
                                     które opisałem na tej stronie. Trafiła mi się grupa w której były praktycznie same
                                     osoby studiujące informatykę więc poprzeczka jak dla mnie postawiona była dość
                                     wysoko. </p>
-                                <p >
+                                <p>
                                     Kurs był podzielony na pięć części:
                                     <ol>
                                         <li>HTML i CSS</li>
@@ -38,7 +38,7 @@ pic: "group-of-lacrosse-players-celebrating-with-coach-during-159728.jpg"
                                 <p>Przed każdym z działów musieliśmy przerobić część teoretyczną na którą składały się
                                     artykuły, filmy, kursy z codeacademy i zadania z codewars. Przed każdym projektem
                                     trzeba było zaliczyć na conajmniej 40% test sprawdzający wiedzę teoretyczną.</p>
-                                <p >
+                                <p>
                                     Do zrealizowania były 4 projekty:
                                     <ol>
                                         <li>Wizytówka - strona internetowa sprawdzająca znajomość HTML i CSS</li>
@@ -52,12 +52,12 @@ pic: "group-of-lacrosse-players-celebrating-with-coach-during-159728.jpg"
                                     którą właśnie przeglądasz :)
                                 </p>
                                 <div class="blogPicturesContainer">
-                                    <img src="../../../images/coding/CC_website.png"></div>
+                                    <img src="../../../images/coding/CC_website.png"/></div>
                                 <p>Drugim projektem była gra Snake, którą robiliśmy w zespole 4 osobowym. Grę możecie
                                     zobaczyć <a href="https://patryqss.github.io/CC.Snake/"
                                         target="_blank"><b>tutaj</b></a></p>
                                 <div class="blogPicturesContainer">
-                                    <img src="../../../images/coding/CC_snake.png"></div>
+                                    <img src="../../../images/coding/CC_snake.png"/></div>
                                 <p>Po pierwszym projekcie niestety odpadły nam z grupy dwie osoby więc kolejny projekt
                                     robiliśmy już wszyscy razem w 6 osób. Była to aplikacja pogodowa, dodatkowo
                                     rozbudowana o wiadomości, fazy księżyca, przelicznik walut i zegarek. Nazwa padła na
@@ -65,7 +65,7 @@ pic: "group-of-lacrosse-players-celebrating-with-coach-during-159728.jpg"
                                         href="https://nefariusek.github.io/ForeCCast/"
                                         target="_blank"><b>linkiem</b></a>.</p>
                                 <div class="blogPicturesContainer"><img src="../../../images/coding/CC_foreccast.png"
-                                        ></div>
+                                        /></div>
                                 <p>Jako ostatni projekt wybraliśmy aplikację motywującą do rozwoju. Nazywa się TaskWars.
                                     W aplikacji tworzymy swoją postać, którą rozwijamy poprzez realizowanie zadań w
                                     prawdziwym życiu. Przykładowo chcemy zmotywować się do biegania więc dodajemy
@@ -79,13 +79,13 @@ pic: "group-of-lacrosse-players-celebrating-with-coach-during-159728.jpg"
                                         target="_blank"><b>tutaj</b></a>.</p>
                                 <div class="blogPicturesContainer">
                                     <div >
-                                        <img src="../../../images/coding/CC_taskwars1.png"></div>
+                                        <img src="../../../images/coding/CC_taskwars1.png"/></div>
                                     <div >
-                                        <img src="../../../images/coding/CC_taskwars2.png"></div>
+                                        <img src="../../../images/coding/CC_taskwars2.png"/></div>
                                     <div>
-                                        <img src="../../../images/coding/CC_taskwars3.png"></div>
+                                        <img src="../../../images/coding/CC_taskwars3.png"/></div>
                                     <div>
-                                        <img src="../../../images/coding/CC_taskwars4.png"></div>
+                                        <img src="../../../images/coding/CC_taskwars4.png"/></div>
                                 </div>
                                 <div >
                                     <p>CodersCamp pozwala zdobyć solidne podstawy HTML, CSS, JS, Node.js, Reacta i
@@ -113,6 +113,6 @@ pic: "group-of-lacrosse-players-celebrating-with-coach-during-159728.jpg"
                                         programowania webowego to śledźcie <a href="https://coderscamp.edu.pl/"
                                             target="_blank"><b>stronę</b></a>. </p>
                                     <p>Jeśli macie jakieś pytania dotyczące kursu to piszcie na maila lub poprzez
-                                        formularz
-                                        kontaktowy, chętnie na nie odpowiem.</p>
+                                        formularz kontaktowy, chętnie na nie odpowiem.</p>
+                        </div>
                         </div>

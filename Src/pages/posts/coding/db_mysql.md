@@ -16,7 +16,7 @@ pic: "pexels-arif-kemal-köroğlu-5332291.jpg"
                                         href="https://dev.mysql.com/"
                                         target="_blank"><b>MySQL</b></a>– wolnodostępny, otwartoźródłowy system zarządzania relacyjnymi bazami danych.</p>
                                  <p>Podsumowując. MySQL jest to relacyjna baza danych, czyli taka w której dane grupowane są w tabelach. Tabele są zbiorami rekordów (wierszy w tabeli) o określonych atrybutach. Atrybut (pole) jest to część tabeli przechowująca określone dane. Rekordy powiązane są ze sobą za pomocą kluczy podstawowych i obcych. Klucz podstawowy (Primary key) - jedno lub więcej pól, których wartość jednoznacznie identyfikuje każdy rekord w tabeli. Taka cecha klucza nazywana jest unikatowością.</p>
-                                  <img src="../../../images/coding/tabela.png" style="width:150px">
+                                  <img src="../../../images/coding/tabela.png" style="width:150px"/>
                                    <p>Podstawowe rodzaje zapytań w SQL:</p>
                                         <p>
                                     <ol>
@@ -28,9 +28,9 @@ pic: "pexels-arif-kemal-köroğlu-5332291.jpg"
                                 </p>
                                 <p>W tym momencie mógłbym tutaj wypisać jakieś przykłady zapytań SQL ale myślę, że na ten temat jest wiele materiałów w Internecie więc wstawiam po prostu dwa cheatsheety z opisanymi zapytaniami:</p>
                                 <a href="https://ugoproto.github.io/ugodoc/pdf/zt_sql_cheat_sheet.pdf"
-                                        target="_blank"><img src="../../../images/coding/sqlcheatsheet_2.png" style="width:150px"></a>
+                                        target="_blank"><img src="../../../images/coding/sqlcheatsheet_2.png" style="width:150px"/></a>
                                   <a href="https://ugoproto.github.io/ugodoc/pdf/SQL-Cheatsheet-2.pdf"
-                                        target="_blank"><img src="../../../images/coding/sqlcheatsheet_1.png" style="width:150px"></a>
+                                        target="_blank"><img src="../../../images/coding/sqlcheatsheet_1.png" style="width:150px"/></a>
                                 <p>Dwie rzeczy, które na pewno warto znać to:
                                     <ol>
                                         <li><b>Grupowanie (GROUP BY)</b></li>

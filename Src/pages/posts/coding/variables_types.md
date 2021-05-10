@@ -8,7 +8,7 @@ short: "#moimisłowami o zmiennych i typach w JavaScript."
 pic: "elizabeth-kay-9szCcOw4BWo-unsplash.jpg"
 ---
 
-  <div>
+<div>
                             <p>Dzisiaj krótki post o zmiennych i typach w JavaScript.</p>
                             <h3>Zmienne</h3>
                                 <p>
@@ -19,7 +19,7 @@ pic: "elizabeth-kay-9szCcOw4BWo-unsplash.jpg"
                                         <li><b>const</b></li>
                                     </ol>
                                 </p>
-                                <p>Główna różnica zmiennych deklarowanych za pomocą każdego z tych słów kluczowych polega na zasięgu ich występowania ale nie tylko. No to po kolei o każdym ze słów kluczowych:
+                                <p>Główna różnica zmiennych deklarowanych za pomocą każdego z tych słów kluczowych polega na zasięgu ich występowania ale nie tylko. No to po kolei o każdym ze słów kluczowych:</p>
                                  <ol>
                                         <li><b>var</b> - posiada zasięg funkcyjny, podlega hoistingowi (czyli automatyczne przenoszenie deklaracji zmiennej na początek jej zasięgu), możliwa  możliwa jest jej redeklaracja i zmiana jej wartości</li>
                                         <li><b>let</b> - posiada zasięg blokowy (czyli ograniczony najbliższymi nawiasami klamrowymi), możliwa jest zmiana jej wartości, nie możemy jej redeklarować</li>
@@ -48,4 +48,4 @@ pic: "elizabeth-kay-9szCcOw4BWo-unsplash.jpg"
                                         target="_blank"><b>Dokumentacja na mdn</b></a></li>
                                     </ul>
                                 </p>
-                        </div>
+                            </div>
