@@ -192,6 +192,63 @@ const ShowPostsWithFetchDataAndFetchErrorAndFetchLoading =
 ```
 <div>
 <p>Otrzymaliśmy komponent wyświetlający posty pobrane z API, obsługujący stan ładowania oraz komunikaty o błędach.</p>
+<p>Zapis przedstawiony powyżej jest dość nieczytelny. Z pomocą przychodzi nam paczka o nazwie <b>recompose</b> i funkcja, którą możemy w niej znaleźć -
+<b>compose</b>. Aby z niej skorzystać musimy lekko zmodyfikować nasz komponent wyższego rzędu <b>withFetchData</b>. Zmiana dotyczy sposobu dostarczania parametrów. Nowy kod komponentu przedstawiam poniżej:</p>
+</div>
+
+```javascript
+import React, {useState, useEffect} from 'react';
+
+export const withFetchData = apiAddress => Component => {
+    return function FetchData(props) {
+        const [fetchedData, setFetchedData] = useState({});
+        const [isLoading, setIsLoading] = useState(false);
+        const [isError, setIsError] = useState(false);
+        const [errorMessage, setErrorMessage] = useState('');
+    
+        useEffect(() => {
+                const getDataFromApi = async () => {
+                    let posts = {};
+                    setIsLoading(true);
+    
+                    try {
+                        const response = await fetch(apiAddress);
+    
+                        if(!response.ok) throw new Error(response.statusText);
+    
+                        posts = await response.json();
+                    } catch (error) {
+                        setErrorMessage(error.message);
+                        setIsLoading(false);
+                        setIsError(true);
+                        return
+                    };
+    
+                    setIsLoading(false);
+                    setFetchedData(posts);
+                };
+    
+                    getDataFromApi();
+            },[]);
+
+        return <Component {...props} data={fetchedData} isLoading={isLoading} isError={isError} errorMessage={errorMessage} />
+    };
+};
+```
+<div>
+<p>Teraz możemy użyć funkcji compose. Kompozycja komponentu będzie wyglądać w tym przypadku tak:</p>
+</div>
+
+```javascript
+const ShowPostsWithFetchDataAndFetchErrorAndFetchLoading = compose(
+  withFetchData(apiAddressPosts), 
+  withFetchLoading, 
+  withFetchError)
+  (ShowPosts);
+```
+<div>
+<p>Zapis jest na pewno bardziej czytelny ale to już Wasz wybór, którego sposobu użyjecie.</p>
+</div>
 <p>Dzięki rozdzieleniu funkcjonalności, możemy użyć utworzonych komponentów wyższego rzędu w różnych częściach aplikacji. Jeśli podmienimy adres endpoint'a w komponencie withFetchData to uzyskamy inne dane, które możemy wyświetlić za pomocą nowego komponentu, którym zastąpimy komponent ShowPosts.</p>
 <p>To by było na tyle na temat komponentów wyższego rzędu. Mam nadzieję, że jeśli ktoś nie miał z nimi w ogóle do czynienia to po przeczytaniu tego tekstu chociaż trochę się z nimi zapoznał.</p>
 <p>

@@ -16,7 +16,7 @@ const AboutMeContent = () => (
                 takich jak: Mercedes S-klasa, Mercedes S-klasa AMG, Porsche 911, Mercedes GLA, BMW M2 i innych. Nie jest to zakmnięty
                 obszar w moim życiu zawodowym ponieważ zdarza mi się po pracy pracować jako konstruktor.</p>
                 <p>Interesuję się również zarządzaniem projektami. Szczególnie metodykami zwinnymi. Posiadam certyfikat PSM I.</p>
-                <div className="image"><Image alt="mfordas photo" filename="photo.png" /></div>
+                <div className="image"><Image alt="mfordas photo" filename="mf.jpg" /></div>
                 </div>
         </div>
 );
