@@ -1,6 +1,6 @@
 --- 
 path: "/new_beginning"
-date: "2021-05-17"
+date: "2021-05-18"
 title: "Od konstruktora do programisty"
 author: "mfordas"
 tags: ["coding", "webdev", "javascript"]
@@ -23,7 +23,7 @@ pic: "mf.jpg"
         <div class="blogPicturesContainer">
         <img src='../../../images/coding/j-kelly-brito-PeUJyoylfe4-unsplash.jpg' alt='learining picutre'/>
         </div>
-        <p>Sam proces nauki trwa do teraz i na pewno będzie jeszcze trwał,, ale do rzeczy - jak to się zaczęło? Do rozpoczęcia nauki programowania miałem kilka podejść. Zaczynałem się uczyć, ale chwilę później  okazywało się, że rozpoczyna się nowy projekt i pracy było tyle, że nie miałem na nic czasu, dosłownie. Językiem, od którego zaczynałem była Java ze względu na to, że miałem podczas nauki wsparcie mojego kolegi Pawła, którego z tego miejsca pozdrawiam. Podejść do nauki było 2-3, ale zawsze kończyły się tak samo - brakiem czasu, a z tego powodu brakiem systematyczności.</p>
+        <p>Sam proces nauki trwa do teraz i na pewno będzie jeszcze trwał, ale do rzeczy - jak to się zaczęło? Do rozpoczęcia nauki programowania miałem kilka podejść. Zaczynałem się uczyć, ale chwilę później  okazywało się, że rozpoczyna się nowy projekt i pracy było tyle, że nie miałem na nic czasu, dosłownie. Językiem, od którego zaczynałem była Java ze względu na to, że miałem podczas nauki wsparcie mojego kolegi Pawła, którego z tego miejsca pozdrawiam. Podejść do nauki było 2-3, ale zawsze kończyły się tak samo - brakiem czasu, a z tego powodu brakiem systematyczności.</p>
         <p>Nadszedł rok 2019 i luźniejszy czas w pracy, zdecydowanie za luźny dla kogoś takiego jak ja, kto nie znosi próżni. Początkowo zajmowałem czas rozwojem wiedzy produktowej, chodziłem na meetup’y, na których poznałem sporo fajnych osób i dużo czytałem na temat zarządzania projektami.</p>
         <p>Przyszedł wrzesień. Trafiłem na facebook’u na ogłoszenie o CodersCamp i pomyślałem, że będzie to bardzo dobra motywacja do nauki. Wysłałem zgłoszenie, zostałem zaproszony na test wstępny, który udało mi się zaliczyć i zacząłem naukę w 6-osobowym zespole. Kurs trwał 3 miesiące i polegał na zrealizowaniu 4 projektów pod okiem mentora. Jeśli jesteście ciekawi szczegółów to znajdziecie je w jednym z moich poprzednich <a href='https://fordas.pl/coderscampres' target='_blank'><b>postów</b></a> na blogu. Dlaczego CodersCamp? Ponieważ  był za darmo i motywował do nauki, tak po prostu. Nie widzę sensu wydawania XX tysięcy złotych na bootcampy, które trwają 3 miesiące, a i tak nie zostanie się po nich programistą.</p>
         <p>Po kursie zaczął się czas samodzielnej nauki. Zaczęły się też projekty w pracy, więc czasu było mniej, ale jakby spojrzeć na mojego Github’a z 2020 roku to można powiedzieć, że uczyłem się w miarę systematycznie:</p>
@@ -88,7 +88,7 @@ pic: "mf.jpg"
         <li>mają szansę poznać narzędzia z grupy DevOps wspomagające programowanie i wydawanie produktu,</li>
         <li>poznają się wzajemnie. :)</li>
         </ul>
-        <p>Kurs trwał miesiąc i dla kogoś takiego jak ja był bardzo dobrym startem w branżę IT. Mniej więcej mogłem zorientować się co się z czym je i czego mogę się spodziewać w pracy w prawdziwym projekcie. Przez kurs przeprowadzili nas dwaj eksperci w swoich dziedzinach - Marek - Software Architect/Tech Lead i Krzysiek - Scrum Master. Po zakończeniu projektu wstępnego każdy został przypisany do projektu komercyjnego, w którym może zdobywać swoje pierwsze doświadczenie w pracy jako programista.</p>
+        <p>Kurs trwał miesiąc i dla kogoś takiego jak ja był bardzo dobrym startem w branżę IT. Mniej więcej mogłem zorientować się co się z czym je i czego mogę się spodziewać w pracy w prawdziwym projekcie. Przez kurs przeprowadzili nas dwaj eksperci w swoich dziedzinach - <a href='https://www.linkedin.com/in/marekbryling/' target='_blank'><b>Marek</b></a> - Software Architect/Tech Lead i <a href='https://www.linkedin.com/in/krzysztof-jablonski/' target='_blank'><b>Krzysiek</b></a> - Project Manager / Scrum Master. Po zakończeniu projektu wstępnego każdy został przypisany do projektu komercyjnego, w którym może zdobywać swoje pierwsze doświadczenie w pracy jako programista.</p>
         <p>Podczas pierwszych trzech miesięcy każdy z nowych pracowników ma trzy rozmowy służące wymianie informacji zwrotnej:</p>
         <ul>
         <li>pierwsza po około dwóch tygodniach, zbierająca pierwsze wrażenie obu stron, wymianę oczekiwań oraz  bliższe zapoznanie się z managerem,</li>
