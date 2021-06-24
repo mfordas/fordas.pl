@@ -11,14 +11,12 @@ pic: "kerem-karaarslan-6-4vPo17qoc-unsplash.jpg"
   <div>
                                 <p>Kolejnym tematem z zaawansowanego Reacta jest zapamiętywanie - memoization. Zapamiętywanie jest techniką optymalizacji wydajności. Polega na zapamiętaniu wyniku funkcji i jeśli w przyszłości zostaną dostarczone do niej argumenty o takich samych wartościach zwrócenie wyniku bez przeprowadzania obliczeń. Warunkiem wykorzystania zapamiętywania na danej funkcji jest to, że funkcja ta jest ‘czysta’ (pure function).
                                 </p>
-                                <p>Trzeba zacząć od tego czym są Higher order components (Komponenty wyższego rzędu). Definicja wg oficjalnej dokumentacji Reacta brzmi:
+                                <p>Po szybkim wstępie rozłóżmy to wszystko na czynniki pierwsze. Zacznijmy od ‘pure function’. Kiedy możemy mówić o funkcji, że jest ‘czysta’? Funkcja musi spełniać dwa warunki:
                                 </p>
                                 <ol>
-        <li>dla takich samych argumentów zawsze daje taki sam wynik</li>
-        <li>nie wywołuje efektów ubocznych</li>
-        </ol>
-                                <p><b>Komponent wyższego rzędu jest funkcją, która przyjmuje jako argument inny komponent i zwraca nowy komponent.</b>
-                                </p>
+                                <li>dla takich samych argumentów zawsze daje taki sam wynik</li>
+                                <li>nie wywołuje efektów ubocznych</li>
+                                </ol>
                                 <p>Pure function są idealnym odwzorowaniem funkcji matematycznych w programowaniu.</p>
                                 <p>Przykładem pure function jest funkcja sumująca trzy liczby:
                                 </p>
@@ -30,7 +28,7 @@ function sum(a, b, c) {
 }
 ```
 <div>
-                                <p>Na tej podstawie możemy zdefiniować pojęcie Pure Component w React. Pure Component możemy zdefiniować jako komponent, którego metoda render przy tych samych właściwościach i stanie wyświetla ten sam wynik. Przykładem takiego elementu może być komponent, który wyświetla listę elementów oraz pozwala dodawać nowe elementy:
+                                <p>Na tej podstawie możemy zdefiniować pojęcie Pure Component w React. Pure Component możemy zdefiniować jako komponent, którego metoda render przy tych samych propsach i stanie wyświetla ten sam wynik. Poniżej widzimy przykład takiego komponentu. Wyświetla on listę elementów oraz pozwala dodawać do niej nowe elementy:
                                 </p>
                                 </div>
 
@@ -38,7 +36,7 @@ function sum(a, b, c) {
 import { useState } from 'react';
 import { List } from './Memoization/List';
 
-const sampleItemsList = [
+const sampleItemList = [
   {
     name: 'Apple',
   },
@@ -54,7 +52,7 @@ const sampleItemsList = [
 ];
 
 function App() {
-  const [itemsList, setitemsList] = useState(sampleItemsList);
+  const [itemList, setItemList] = useState(sampleItemList);
   const [itemName, setItemName] = useState('');
 
   console.log('Render App');
@@ -62,14 +60,14 @@ function App() {
   const handleItemName = (event) => setItemName(event.target.value);
 
   const handleAddItem = () => {
-    setitemsList(itemsList.concat({ name: itemName }));
+    setItemList(itemList.concat({ name: itemName }));
     setItemName('');
   };
 
   return (
     <div className='App'>
       <header className='App-header'>
-        <List itemsList={itemsList} />
+        <List itemList={itemList} />
         <input type='text' value={itemName} onChange={handleItemName}></input>
         <button onClick={handleAddItem}>Add item to list</button>
       </header>
@@ -77,11 +75,11 @@ function App() {
   );
 }
 
-const List = ({ itemsList }) => {
+const List = ({ itemList }) => {
   console.log('Render list');
 
-  if (itemsList.length > 0)
-    return itemsList.map((item, index) => <Item key={index} item={item} />);
+  if (itemList.length > 0)
+    return itemList.map((item, index) => <Item key={index} item={item} />);
 
   return <div>There are no items on the list</div>;
 };
@@ -89,11 +87,7 @@ const List = ({ itemsList }) => {
 const Item = ({ item }) => {
   console.log(`Render list item ${item.name}`);
   return (
-    <div style={{ display: 'flex' }}>
-      <div>{item.id}</div>
       <div>{item.name}</div>
-      <div>{item.color}</div>
-    </div>
   );
 };
 ```
@@ -110,7 +104,7 @@ Render list item Tomato
 Render list item Orange
 ```
 <div>
-<p>Przy każdym wpisaniu w text input wartości dostajemy taki sam zestaw logów. Oznacza to, że wszystkie komponenty zostały ponownie wyrenderowane. W małych aplikacjach nie jest to problemem ponieważ nie wpływa na płynność działania aplikacji ale łatwo wyobrazić sobie aplikację w której mamy do czynienia z bardzo dużymi listami, których wyświetlanie zabiera dużo czasu i zasobów. W tym momencie przychodzi nam z pomocą komponent wyższego rzędu React.memo. Po wprowadzeniu React.memo nasz kod będzie wyglądał następująco:</p>
+<p>Przy każdym wpisaniu w text input wartości dostajemy taki sam zestaw logów. Oznacza to, że wszystkie komponenty zostały ponownie wyrenderowane. W małych aplikacjach nie jest to problemem ponieważ nie wpływa na płynność ich działania. Łatwo jednak wyobrazić sobie aplikację, w której mamy do czynienia z bardzo dużymi listami, których wyświetlanie zabiera dużo czasu i zasobów. W tym momencie przychodzi nam z pomocą komponent wyższego rzędu React.memo. Po wprowadzeniu React.memo nasz kod będzie wyglądał następująco:</p>
 </div>
 
 ```javascript
@@ -118,11 +112,11 @@ Render list item Orange
 
 function App() {...}
 
-const List = React.memo(({ itemsList }) => {
+const List = React.memo(({ itemList }) => {
   console.log('Render list');
 
-  if (itemsList.length > 0)
-    return itemsList.map((item, index) => <Item key={index} item={item} />);
+  if (itemList.length > 0)
+    return itemList.map((item, index) => <Item key={index} item={item} />);
 
   return <div>There are no items on the list</div>;
 });
@@ -135,7 +129,8 @@ export const Item = React.memo(({ item }) => {
 });
 ```
 <div>
-<p>Komponenty List oraz Item opakowaliśmy w komponent wyższego rzędu React.memo. Sprawdźmy teraz zachowanie naszych komponentów podczas wpisywania nazwy nowego przedmiotu. Log, który otrzymujemy to:</p>
+<p>Komponenty List oraz Item opakowaliśmy w 
+<a href="https://fordas.pl/hoc" target="_blank"><b>komponent wyższego rzędu</b></a> React.memo. Sprawdźmy teraz zachowanie naszych komponentów podczas wpisywania nazwy nowego przedmiotu. Log, który otrzymujemy to:</p>
 </div>
 
 ```javascript
