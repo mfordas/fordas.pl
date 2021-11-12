@@ -8,7 +8,7 @@ const MainPageContent = () => {
   return (
     <div className="mainPageContainer" >
         <div className="contentArea">
-        <div className="text">Cześć. <br/> Nazywam się Mateusz Fordas. Jestem konstruktorem elementów z tworzyw sztucznych i programistą JavaScript.</div>
+        <div className="text">Cześć! <br/> Nazywam się Mateusz Fordas. Jestem programistą JavaScript. Obecnie pracuję w React i React-Native. Zajmuję się również konstruowaniem elementów z tworzyw sztucznych dla przemysłu motoryzacyjnego.</div>
         <div className="image"><Image alt="mfordas photo" filename="pexels-pixabay-257897.jpg" /></div>
         </div>
         <div className="contentArea">
